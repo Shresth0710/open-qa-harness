@@ -77,7 +77,8 @@ for free.
 Test on what the audience uses, not on what you have. If the owner has analytics, take the top
 browsers and devices from there. If not, a sensible default is:
 - **Chromium** (Chrome, Edge) desktop and mobile emulation for the full pass;
-- **WebKit** (the engine behind Safari, and behind every browser on iPhone) for the critical journeys;
+- **WebKit** (the engine behind Safari, and behind most iPhone browsers; since iOS 17.4 Apple lets
+  browsers in the EU use other engines, [Apple](https://developer.apple.com/support/alternative-browser-engines/)) for the critical journeys;
 - **Firefox** for the critical journeys if the audience is technical or European.
 
 `oqa recon` and `oqa scan` take `--browser chromium|firefox|webkit`

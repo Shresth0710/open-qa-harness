@@ -14,7 +14,7 @@ Use this when the product serves more than one language, country or currency, or
 - [ ] Dates in the locale's order (05/12 is May 12 or 5 December), with the right first day of the week
 - [ ] Times and time zones: a booking made in one zone shows the right time to a user in another; daylight-saving change days are handled
 - [ ] Numbers: decimal and thousands separators (`1,234.5` vs `1.234,5`); input accepts the local form
-- [ ] Currency: symbol and position, decimals (JPY has none), rounding, tax/VAT display rules per country
+- [ ] Currency: symbol and position, decimals (not every currency uses two decimal places; check each currency's ISO 4217 minor unit), rounding, tax/VAT display rules per country
 - [ ] Addresses and phone numbers: postcode formats, optional states/provinces, international phone input
 
 ## Switching
