@@ -16,7 +16,7 @@ plugin, otherwise the folder containing `bin/oqa.mjs`. `oqa` below = `node <harn
 4. **Test each area** (`method/03`, `04`; white-box `05`): hands-on, desktop + mobile, two sightings before Confirmed.
 5. **Write findings** (`method/06`, `07`, `08`) in the format in `templates/engagement/findings/README.md`; `oqa lint`.
 6. **Verify** (`method/09`): an independent re-run of every Critical/High + random, ≥8.
-7. **Report** (`method/10`): `oqa report engagements/<name> --pdf`, then open it and look.
+7. **Report** (`method/10`): `oqa report engagements/<name> --pdf`, then open it and look. `oqa export --format csv|github` for trackers.
 8. **Regress** (`method/11`): one failing-first test per confirmed High/Critical.
 
 ## Non-negotiables

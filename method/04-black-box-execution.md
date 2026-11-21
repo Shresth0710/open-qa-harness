@@ -72,6 +72,20 @@ for free.
 > Never put a password in a script or a finding. `auth/*.json` files are live sessions. They are
 > git-ignored, and you should delete them when the engagement ends.
 
+## Browsers and devices
+
+Test on what the audience uses, not on what you have. If the owner has analytics, take the top
+browsers and devices from there. If not, a sensible default is:
+- **Chromium** (Chrome, Edge) desktop and mobile emulation for the full pass;
+- **WebKit** (the engine behind Safari, and behind every browser on iPhone) for the critical journeys;
+- **Firefox** for the critical journeys if the audience is technical or European.
+
+`oqa recon` and `oqa scan` take `--browser chromium|firefox|webkit`
+(`npx playwright install firefox webkit` first). Emulation catches layout and engine bugs. Touch,
+the on-screen keyboard and real performance need one real phone. Record the browser and version
+in **Where** for every finding, because "works in Chrome, broken in Safari" is a common real bug.
+Checklist: [compatibility](checklists/compatibility-and-browsers.md).
+
 ## Things black-box testing reliably finds that teams miss
 - Hostname splits (`www` vs bare, `app` vs marketing site) breaking sessions or links.
 - Validation in the UI but not the API (or the reverse): the form blocks `0`, but pasting it works.

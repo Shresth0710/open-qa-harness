@@ -31,12 +31,12 @@
   "scripts": {
     "try": "node demo/try.mjs",
     "demo": "node demo/server.mjs",
-    "test": "node --test test/",
+    "test": "node --test test/*.test.mjs",
     "oqa": "node bin/oqa.mjs",
     "setup": "npx playwright install chromium"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
   "keywords": [
     "qa",

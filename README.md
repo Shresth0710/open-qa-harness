@@ -39,11 +39,11 @@ exact steps and the screenshot that shows the bug.
 |---|---|---|
 | **1 · Scope** | Authorisation, goal, reader, environment, accounts, and the **rules of engagement** (what you may create, send or pay) | `oqa init` → `engagement.md` |
 | **2 · Recon** | Crawl + sitemap + JS-bundle routes, with console errors, failed requests and desktop/mobile screenshots per page | `oqa recon` |
-| **3 · Automated pass** | Accessibility (axe-core, WCAG 2.2 AA tags), security headers, cookie flags, broken links, console errors, lab LCP/CLS, mobile overflow, passwords sent by GET | `oqa scan` |
+| **3 · Automated pass** | Accessibility (axe-core, WCAG 2.2 AA tags), security headers, cookie flags, broken links, console errors, lab LCP/CLS, mobile overflow, passwords sent by GET; in Chromium, Firefox or WebKit | `oqa scan` |
 | **4 · Hands-on testing** | Area by area (4–6 routes each): happy path, boundaries, state, roles, mobile, side effects | the [method](method/) + checklists; or agents |
 | **5 · Findings** | One format for every bug: severity, priority, status, plain-words impact, steps, expected/actual, evidence | `oqa new-finding`, `oqa lint` |
 | **6 · Verification** | A different person or agent re-runs every Critical/High from the write-up alone | [`method/09`](method/09-verification.md) |
-| **7 · Report** | Self-contained HTML + PDF: summary, coverage, findings sorted by severity | `oqa report --pdf` |
+| **7 · Report** | Self-contained HTML + PDF: summary, coverage, findings sorted by severity; CSV or GitHub-issue export for your tracker | `oqa report --pdf`, `oqa export` |
 | **8 · Regression** | One failing-first Playwright test per confirmed High/Critical bug | `/oqa:qa-regress` |
 
 ## Two modes
@@ -79,8 +79,9 @@ It ships four agents: **qa-explorer** (one per area), **qa-code-reader**, **qa-v
 agent that found the bug) and **qa-reporter**. There's also an **open-qa** skill that loads the method
 when you ask Claude to "QA this site".
 
-After installing, run `/oqa:qa` once and it will run `oqa doctor`. If Chromium is missing, it
-installs it with `npx playwright install chromium`.
+The first `/oqa:qa` runs `oqa doctor`. A fresh plugin install has no Node packages or browser yet.
+Doctor prints the two exact commands (`npm install --prefix <plugin folder>` and
+`npx playwright install chromium`), and Claude runs them once.
 
 > Cloned the repo instead? Open it in Claude Code and the same commands work without the prefix
 > (`/qa`, `/qa-recon`, …).
@@ -100,6 +101,7 @@ node bin/oqa.mjs scan --from engagements/shop/recon.json --out engagements/shop 
 node bin/oqa.mjs new-finding engagements/shop AUTH      # write findings as you test
 node bin/oqa.mjs lint engagements/shop
 node bin/oqa.mjs report engagements/shop --pdf
+node bin/oqa.mjs export engagements/shop --format csv     # or --format github: issue bodies + a script you run with GH_REPO=owner/repo
 ```
 
 ## The method
@@ -121,10 +123,11 @@ Fourteen short chapters, with sources for the external facts (ISTQB, WCAG 2.2, O
 [12 Safety in production](method/12-safety-in-production.md) ·
 [13 QA with AI agents](method/13-qa-with-ai-agents.md)
 
-Checklists: [accessibility](method/checklists/accessibility.md) · [auth & sessions](method/checklists/auth-and-sessions.md) ·
+Ten checklists: [accessibility](method/checklists/accessibility.md) · [auth & sessions](method/checklists/auth-and-sessions.md) ·
 [forms](method/checklists/forms-and-input.md) · [mobile](method/checklists/mobile-and-responsive.md) ·
 [performance](method/checklists/performance.md) · [security (passive)](method/checklists/security-passive.md) ·
-[payments](method/checklists/payments-and-billing.md) · [content & SEO basics](method/checklists/content-and-seo-basics.md)
+[payments](method/checklists/payments-and-billing.md) · [compatibility & browsers](method/checklists/compatibility-and-browsers.md) ·
+[i18n](method/checklists/i18n-and-localisation.md) · [content & SEO basics](method/checklists/content-and-seo-basics.md)
 
 ### The rules it is built on
 1. **Test as the user, report for the fixer.** Every finding has a plain-words line *and* exact steps.
@@ -181,7 +184,7 @@ Sessions saved by `oqa login` (`auth/*.json`) are live credentials. They are git
 you are done. See [SECURITY.md](SECURITY.md) and [method/12](method/12-safety-in-production.md).
 
 ## Requirements
-Node.js 18+ · Chromium via Playwright (`npx playwright install chromium`) · `pdftotext`/`pdftoppm` (poppler) optional, for checking PDFs.
+Node.js 20+ · Chromium via Playwright (Firefox/WebKit optional, for cross-browser runs) (`npx playwright install chromium`) · `pdftotext`/`pdftoppm` (poppler) optional, for checking PDFs.
 
 ## Contributing
 New checklists, demo bugs and `oqa scan` rules are welcome. Every new check ships with a planted bad case that must fail.

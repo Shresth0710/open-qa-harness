@@ -36,3 +36,19 @@ test('PDF renders (valid PDF header, non-trivial size)', async (t) => {
   assert.equal(head, '%PDF-');
   assert.ok(fs.statSync(file).size > 50_000);
 });
+
+test('report HTML does not scroll sideways on a 390px phone', async (t) => {
+  if (!(await chromiumLaunches())) return t.skip('Chromium not installed (npm run setup)');
+  const { chromium } = await import('playwright');
+  const b = await chromium.launch();
+  t.after(() => b.close());
+  const page = await b.newPage({ viewport: { width: 390, height: 844 } });
+  await page.setContent(buildReportHtml(EXAMPLE, { includeCandidates: true }).html, { waitUntil: 'load' });
+  const { sw, iw } = await page.evaluate(() => ({ sw: document.documentElement.scrollWidth, iw: window.innerWidth }));
+  assert.ok(sw <= iw, `scrollWidth ${sw} > innerWidth ${iw}`);
+  // Wide tables scroll inside their own box; they are not crushed into one-letter columns to fit the phone.
+  const narrow = await page.evaluate(() => [...document.querySelectorAll('table.grid td')]
+    .filter((td) => td.textContent.trim().length > 3 && td.getBoundingClientRect().width < 56)
+    .map((td) => `${Math.round(td.getBoundingClientRect().width)}px "${td.textContent.trim().slice(0, 20)}"`));
+  assert.deepEqual(narrow.slice(0, 5), [], `table cells crushed below 56px: ${narrow.length}`);
+});

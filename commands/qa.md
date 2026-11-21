@@ -53,7 +53,8 @@ look at it** (`method/10-reporting.md`).
 ## 7 · Close
 Confirm `created-items.md` shows everything deleted and `sends.md` stays within the allowed list.
 Tell the user: counts by severity, the top 3 issues in plain words, what was not covered and why,
-the report path, and anything they must clean up themselves.
+the report path, and anything they must clean up themselves. Offer `oqa export engagements/<name> --format csv|github`
+for their tracker (the GitHub format writes a script for the user to run; never post issues yourself).
 
 Never: pay, change plans, message real users, touch existing records, run active security attacks,
 or call the work done before lint passes and the PDF has been looked at.

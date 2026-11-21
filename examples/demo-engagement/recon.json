@@ -2,7 +2,9 @@
   "tool": "oqa recon",
   "target": "http://localhost:4173/",
   "origin": "http://localhost:4173",
-  "date": "2026-11-21T13:53:54.841Z",
+  "browser": "chromium",
+  "hashRouting": false,
+  "date": "2026-11-21T14:52:51.576Z",
   "maxPages": 40,
   "robotsTxt": true,
   "routes": [
@@ -16,7 +18,7 @@
       "visited": true,
       "status": 200,
       "title": "Book a class · Acme Studio",
-      "loadMs": 539,
+      "loadMs": 550,
       "consoleErrors": [],
       "failedRequests": [],
       "screenshots": [
@@ -35,7 +37,7 @@
       "visited": true,
       "status": 200,
       "title": "About us · Acme Studio",
-      "loadMs": 539,
+      "loadMs": 538,
       "consoleErrors": [],
       "failedRequests": [],
       "screenshots": [
@@ -55,7 +57,7 @@
       "visited": true,
       "status": 200,
       "title": "Book a class · Acme Studio",
-      "loadMs": 527,
+      "loadMs": 526,
       "consoleErrors": [],
       "failedRequests": [],
       "screenshots": [
@@ -73,7 +75,7 @@
       "visited": true,
       "status": 200,
       "title": "Book a class · Acme Studio",
-      "loadMs": 516,
+      "loadMs": 528,
       "consoleErrors": [],
       "failedRequests": [],
       "screenshots": [
@@ -91,7 +93,7 @@
       "visited": true,
       "status": 200,
       "title": "Book a class · Acme Studio",
-      "loadMs": 520,
+      "loadMs": 528,
       "consoleErrors": [],
       "failedRequests": [],
       "screenshots": [
@@ -109,7 +111,7 @@
       "visited": true,
       "status": 200,
       "title": "Book a class · Acme Studio",
-      "loadMs": 526,
+      "loadMs": 528,
       "consoleErrors": [],
       "failedRequests": [],
       "screenshots": [
@@ -129,7 +131,7 @@
       "visited": true,
       "status": 200,
       "title": "Your bookings · Acme Studio",
-      "loadMs": 536,
+      "loadMs": 533,
       "consoleErrors": [
         "Cannot read properties of undefined (reading 'reminders')"
       ],
@@ -150,7 +152,7 @@
       "visited": true,
       "status": 200,
       "title": "Log in · Acme Studio",
-      "loadMs": 533,
+      "loadMs": 534,
       "consoleErrors": [],
       "failedRequests": [],
       "screenshots": [
@@ -169,7 +171,7 @@
       "visited": true,
       "status": 200,
       "title": "Pricing · Acme Studio",
-      "loadMs": 535,
+      "loadMs": 533,
       "consoleErrors": [],
       "failedRequests": [],
       "screenshots": [
@@ -188,7 +190,7 @@
       "visited": true,
       "status": 200,
       "title": "Sign up · Acme Studio",
-      "loadMs": 528,
+      "loadMs": 525,
       "consoleErrors": [],
       "failedRequests": [],
       "screenshots": [
@@ -206,7 +208,7 @@
       "visited": true,
       "status": 404,
       "title": "Page not found · Acme Studio",
-      "loadMs": 535,
+      "loadMs": 532,
       "consoleErrors": [
         "Failed to load resource: the server responded with a status of 404 (Not Found)"
       ],
@@ -230,7 +232,7 @@
       "consoleErrors": [],
       "failedRequests": [],
       "screenshots": [],
-      "note": "candidate (bundle) – unverified"
+      "note": "candidate (bundle) – 404, probably not a real route"
     },
     {
       "route": "/api/bookings",
@@ -245,7 +247,7 @@
       "consoleErrors": [],
       "failedRequests": [],
       "screenshots": [],
-      "note": "candidate (bundle) – unverified"
+      "note": "candidate (bundle) – 404, probably not a real route"
     },
     {
       "route": "/checkout",
@@ -260,7 +262,7 @@
       "consoleErrors": [],
       "failedRequests": [],
       "screenshots": [],
-      "note": "candidate (bundle) – unverified"
+      "note": "candidate (bundle) – answers 200, not linked"
     },
     {
       "route": "/gift-cards",
@@ -275,7 +277,7 @@
       "consoleErrors": [],
       "failedRequests": [],
       "screenshots": [],
-      "note": "candidate (bundle) – unverified"
+      "note": "candidate (bundle) – 404, probably not a real route"
     },
     {
       "route": "/logout",

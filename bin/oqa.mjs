@@ -2,14 +2,15 @@
 import { c, bad, parseArgs, UsageError } from '../lib/ui.mjs';
 
 const COMMANDS = {
-  doctor: { summary: 'check Node, Playwright and Chromium are ready', spec: {} },
+  doctor: { summary: 'check Node, Playwright and the browsers are ready', spec: {} },
   init: { summary: 'create an engagement folder from the template', spec: { url: 'string', mode: 'string', root: 'string' } },
   login: { summary: 'sign in by hand once and save the session for other commands', spec: { save: 'string' } },
-  recon: { summary: 'crawl a site and list every route found', spec: { out: 'string', 'max-pages': 'number', auth: 'string', shots: 'boolean' } },
-  scan: { summary: 'run automated checks and write candidate findings', spec: { from: 'string', out: 'string', auth: 'string' } },
+  recon: { summary: 'crawl a site and list every route found', spec: { out: 'string', 'max-pages': 'number', auth: 'string', shots: 'boolean', browser: 'string' } },
+  scan: { summary: 'run automated checks and write candidate findings', spec: { from: 'string', out: 'string', auth: 'string', browser: 'string' } },
   lint: { summary: 'check every finding is complete and its evidence exists', spec: {} },
   report: { summary: 'build report.html (and report.pdf) from an engagement', spec: { pdf: 'boolean', title: 'string', 'include-candidates': 'boolean' } },
   'new-finding': { summary: 'append a blank finding with the next free ID', spec: {} },
+  export: { summary: 'export findings as CSV or GitHub issue files (never sends anything)', spec: { format: 'string', out: 'string', 'include-candidates': 'boolean' } },
 };
 
 function mainHelp() {
@@ -28,6 +29,8 @@ Start here (from a clone, "oqa" is "node bin/oqa.mjs" or "npm run oqa --"):
   oqa doctor
   oqa init my-first --url http://localhost:4173
   oqa recon http://localhost:4173 --out engagements/my-first
+
+recon and scan take --browser chromium|firefox|webkit (default chromium).
 
 Only test systems you are authorised to test.`;
 }
@@ -102,6 +105,13 @@ async function run(argv) {
       m.newFinding(positional[0], positional[1]);
       return 0;
     }
+    case 'export': {
+      const m = await import('../lib/export.mjs');
+      if (opts.help) return say(m.exportHelp);
+      need(positional[0], 'an engagement folder', m.exportHelp);
+      m.exportFindings(positional[0], opts);
+      return 0;
+    }
   }
   return 0;
 }
@@ -127,6 +137,6 @@ run(process.argv.slice(2)).then(
     }
     bad(err.message || String(err));
     if (process.env.OQA_DEBUG) console.error(err.stack);
-    process.exitCode = 1;
+    process.exitCode = err.exitCode || 1;
   },
 );

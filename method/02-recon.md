@@ -20,6 +20,18 @@ You cannot state coverage for pages you never knew existed. Recon builds the lis
 > behind feature flags and strings that only look like paths. Visit each one before treating it as a
 > page, and never file a bug on a bundle string you have not loaded.
 
+## Single-page apps and hash routes
+
+Many apps are single-page apps (React, Vue, Angular…). Three things change:
+- **Hash routing.** If links look like `/#/settings` or `#!/orders`, the part after `#` *is* the route.
+  `oqa recon` keeps `#/…` fragments as distinct routes. Test them as pages.
+- **Routes that are not links.** Screens reached only by a button (`navigate('/billing')`) never
+  appear in a crawl. They show up as bundle candidates, or in the code (white-box). Open them
+  directly by URL, then also reach them through the UI. A screen that works by URL but cannot be
+  reached by clicking is itself a finding.
+- **Deep links and refresh.** Open a deep route directly in a fresh tab and refresh it. Single-page
+  apps often 404 on refresh because the server does not rewrite deep paths to `index.html`.
+
 ## Split into areas
 
 Group routes into areas of **about 4–6 routes** that share an account and a purpose:

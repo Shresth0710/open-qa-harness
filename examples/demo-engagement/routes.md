@@ -17,7 +17,7 @@ Bigger areas run out of time or context half-way and the second half gets tested
 | (candidates) | /account/settings · /gift-cards | customer | tester 1: visited, both 404, not linked anywhere |
 
 ## All routes found
-<!-- oqa recon writes the table below; re-running replaces it. Generated 2026-11-21 13:53 UTC from http://localhost:4173/ -->
+<!-- oqa recon writes the table below; re-running replaces it. Generated 2026-11-21 14:52 UTC from http://localhost:4173/ -->
 
 | Route | Source | Status | Title | Console errors | Failed requests |
 |---|---|---|---|---|---|
@@ -32,8 +32,8 @@ Bigger areas run out of time or context half-way and the second half gets tested
 | `/pricing` | sitemap, crawl | 200 | Pricing · Acme Studio | 0 | 0 |
 | `/signup` | sitemap, crawl | 200 | Sign up · Acme Studio | 0 | 0 |
 | `/terms` | crawl | 404 | Page not found · Acme Studio | 1 | 0 |
-| `/account/settings` | bundle | candidate (bundle) – unverified |  |  |  |
-| `/api/bookings` | bundle | candidate (bundle) – unverified |  |  |  |
-| `/checkout` | bundle | candidate (bundle) – unverified |  |  |  |
-| `/gift-cards` | bundle | candidate (bundle) – unverified |  |  |  |
+| `/account/settings` | bundle | candidate (bundle) – 404, probably not a real route |  |  |  |
+| `/api/bookings` | bundle | candidate (bundle) – 404, probably not a real route |  |  |  |
+| `/checkout` | bundle | candidate (bundle) – answers 200, not linked |  |  |  |
+| `/gift-cards` | bundle | candidate (bundle) – 404, probably not a real route |  |  |  |
 | `/logout` | crawl | not followed (looks destructive) |  |  |  |

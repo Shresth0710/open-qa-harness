@@ -352,7 +352,9 @@ function notFound(p) {
 const isMain = process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.argv[1])).href;
 if (isMain) {
   const port = Number(process.env.PORT || 4173);
-  createDemoServer().listen(port, () => {
+  // Loopback only: this app is insecure on purpose, so it is not offered to the network. HOST=0.0.0.0 to override.
+  const host = process.env.HOST || '127.0.0.1';
+  createDemoServer().listen(port, host, () => {
     console.log(`Acme Studio Booking (demo app with planted bugs) on http://localhost:${port}`);
     console.log('Demo login: demo@acme.test / demo1234 · Bugs are listed in demo/ANSWER-KEY.md');
   });

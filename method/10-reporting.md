@@ -29,6 +29,17 @@ from the data it summarises.
 - Remove anything private: tokens in URLs, other users' names in screenshots, internal hostnames
   the client did not want shared.
 
+## Getting findings into the team's tracker
+
+A PDF is for reading. Fixing happens in a tracker. `oqa export` turns the same findings into:
+- `--format csv`: one row per finding, which imports into Jira, Linear, Trello, Sheets or Excel;
+- `--format github`: one issue body per finding plus a `create-issues.sh` that **you** review and
+  run with `GH_REPO=owner/repo bash create-issues.sh`. The script refuses to run without `GH_REPO`, so issues
+  never land in whichever repo your terminal happens to be in. The tool never posts anything itself.
+
+Keep the finding ID in the ticket title (`[QA-CORE-01] Checkout total is wrong…`). That way the
+report, the ticket and the regression test can all be matched later.
+
 ## Writing for the reader
 - **Owner / founder:** they need impact and the decision. The summary and the plain-words lines
   are for them.

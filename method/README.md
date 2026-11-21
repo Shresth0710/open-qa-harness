@@ -39,4 +39,6 @@ Checklists, for use during testing:
 [performance](checklists/performance.md) ·
 [security (passive)](checklists/security-passive.md) ·
 [payments and billing](checklists/payments-and-billing.md) ·
+[compatibility and browsers](checklists/compatibility-and-browsers.md) ·
+[i18n and localisation](checklists/i18n-and-localisation.md) ·
 [content and SEO basics](checklists/content-and-seo-basics.md)
