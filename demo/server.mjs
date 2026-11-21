@@ -4,7 +4,7 @@ import http from 'node:http';
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
-import { fileURLToPath, pathToFileURL } from 'node:url';
+import { fileURLToPath } from 'node:url';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const STATIC = path.join(here, 'static');
@@ -349,7 +349,8 @@ function notFound(p) {
   return `<div class="auth"><h1>Page not found</h1><p>We could not find <code>${esc(p)}</code>.</p><p><a href="/">Back to the home page</a></p></div>`;
 }
 
-const isMain = process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.argv[1])).href;
+// realpath on both sides: a symlinked path (macOS /var -> /private/var) must still count as "run directly".
+const isMain = Boolean(process.argv[1]) && fs.realpathSync(fileURLToPath(import.meta.url)) === fs.realpathSync(path.resolve(process.argv[1]));
 if (isMain) {
   const port = Number(process.env.PORT || 4173);
   // Loopback only: this app is insecure on purpose, so it is not offered to the network. HOST=0.0.0.0 to override.
