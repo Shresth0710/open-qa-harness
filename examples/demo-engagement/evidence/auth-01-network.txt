@@ -1,0 +1,5 @@
+Navigation requests after clicking "Log in" (demo account):
+http://localhost:4173/login
+http://localhost:4173/login?email=demo%40acme.test&password=demo1234
+http://localhost:4173/dashboard
+http://localhost:4173/login

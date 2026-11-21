@@ -1,0 +1,1233 @@
+{
+  "tool": "oqa scan",
+  "origin": "http://localhost:4173",
+  "date": "2026-11-21T13:53:55.317Z",
+  "tags": [
+    "wcag2a",
+    "wcag2aa",
+    "wcag21a",
+    "wcag21aa",
+    "wcag22aa"
+  ],
+  "pages": [
+    {
+      "url": "http://localhost:4173/",
+      "viewport": "desktop",
+      "status": 200,
+      "perf": {
+        "ttfb": 1,
+        "lcp": 24,
+        "cls": 0
+      },
+      "consoleErrors": [],
+      "headers": {
+        "Content-Security-Policy": false,
+        "X-Content-Type-Options": false,
+        "Referrer-Policy": false,
+        "Permissions-Policy": false,
+        "X-Frame-Options or CSP frame-ancestors": false
+      },
+      "axe": [
+        {
+          "id": "button-name",
+          "impact": "critical",
+          "nodes": 1
+        },
+        {
+          "id": "image-alt",
+          "impact": "critical",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:4173/",
+      "viewport": "mobile",
+      "status": 200,
+      "perf": {
+        "ttfb": 2,
+        "lcp": 20,
+        "cls": 0
+      },
+      "consoleErrors": [],
+      "axe": [
+        {
+          "id": "button-name",
+          "impact": "critical",
+          "nodes": 1
+        },
+        {
+          "id": "image-alt",
+          "impact": "critical",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:4173/about",
+      "viewport": "desktop",
+      "status": 200,
+      "perf": {
+        "ttfb": 1,
+        "lcp": 20,
+        "cls": 0
+      },
+      "consoleErrors": [],
+      "headers": {
+        "Content-Security-Policy": false,
+        "X-Content-Type-Options": false,
+        "Referrer-Policy": false,
+        "Permissions-Policy": false,
+        "X-Frame-Options or CSP frame-ancestors": false
+      },
+      "axe": [
+        {
+          "id": "button-name",
+          "impact": "critical",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:4173/about",
+      "viewport": "mobile",
+      "status": 200,
+      "perf": {
+        "ttfb": 1,
+        "lcp": 16,
+        "cls": 0
+      },
+      "consoleErrors": [],
+      "axe": [
+        {
+          "id": "button-name",
+          "impact": "critical",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:4173/book",
+      "viewport": "desktop",
+      "status": 200,
+      "perf": {
+        "ttfb": 1,
+        "lcp": 20,
+        "cls": 0
+      },
+      "consoleErrors": [],
+      "headers": {
+        "Content-Security-Policy": false,
+        "X-Content-Type-Options": false,
+        "Referrer-Policy": false,
+        "Permissions-Policy": false,
+        "X-Frame-Options or CSP frame-ancestors": false
+      },
+      "axe": [
+        {
+          "id": "button-name",
+          "impact": "critical",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:4173/book",
+      "viewport": "mobile",
+      "status": 200,
+      "perf": {
+        "ttfb": 1,
+        "lcp": 20,
+        "cls": 0
+      },
+      "consoleErrors": [],
+      "axe": [
+        {
+          "id": "button-name",
+          "impact": "critical",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:4173/book?class=darkroom",
+      "viewport": "desktop",
+      "status": 200,
+      "perf": {
+        "ttfb": 1,
+        "lcp": 20,
+        "cls": 0
+      },
+      "consoleErrors": [],
+      "headers": {
+        "Content-Security-Policy": false,
+        "X-Content-Type-Options": false,
+        "Referrer-Policy": false,
+        "Permissions-Policy": false,
+        "X-Frame-Options or CSP frame-ancestors": false
+      },
+      "axe": [
+        {
+          "id": "button-name",
+          "impact": "critical",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:4173/book?class=darkroom",
+      "viewport": "mobile",
+      "status": 200,
+      "perf": {
+        "ttfb": 1,
+        "lcp": 20,
+        "cls": 0
+      },
+      "consoleErrors": [],
+      "axe": [
+        {
+          "id": "button-name",
+          "impact": "critical",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:4173/book?class=drawing",
+      "viewport": "desktop",
+      "status": 200,
+      "perf": {
+        "ttfb": 2,
+        "lcp": 20,
+        "cls": 0
+      },
+      "consoleErrors": [],
+      "headers": {
+        "Content-Security-Policy": false,
+        "X-Content-Type-Options": false,
+        "Referrer-Policy": false,
+        "Permissions-Policy": false,
+        "X-Frame-Options or CSP frame-ancestors": false
+      },
+      "axe": [
+        {
+          "id": "button-name",
+          "impact": "critical",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:4173/book?class=drawing",
+      "viewport": "mobile",
+      "status": 200,
+      "perf": {
+        "ttfb": 1,
+        "lcp": 20,
+        "cls": 0
+      },
+      "consoleErrors": [],
+      "axe": [
+        {
+          "id": "button-name",
+          "impact": "critical",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:4173/book?class=wheel",
+      "viewport": "desktop",
+      "status": 200,
+      "perf": {
+        "ttfb": 1,
+        "lcp": 20,
+        "cls": 0
+      },
+      "consoleErrors": [],
+      "headers": {
+        "Content-Security-Policy": false,
+        "X-Content-Type-Options": false,
+        "Referrer-Policy": false,
+        "Permissions-Policy": false,
+        "X-Frame-Options or CSP frame-ancestors": false
+      },
+      "axe": [
+        {
+          "id": "button-name",
+          "impact": "critical",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:4173/book?class=wheel",
+      "viewport": "mobile",
+      "status": 200,
+      "perf": {
+        "ttfb": 2,
+        "lcp": 20,
+        "cls": 0
+      },
+      "consoleErrors": [],
+      "axe": [
+        {
+          "id": "button-name",
+          "impact": "critical",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:4173/dashboard",
+      "viewport": "desktop",
+      "status": 200,
+      "perf": {
+        "ttfb": 1,
+        "lcp": 20,
+        "cls": 0
+      },
+      "consoleErrors": [
+        "Uncaught TypeError: Cannot read properties of undefined (reading 'reminders')"
+      ],
+      "headers": {
+        "Content-Security-Policy": false,
+        "X-Content-Type-Options": false,
+        "Referrer-Policy": false,
+        "Permissions-Policy": false,
+        "X-Frame-Options or CSP frame-ancestors": false
+      },
+      "axe": [
+        {
+          "id": "button-name",
+          "impact": "critical",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:4173/dashboard",
+      "viewport": "mobile",
+      "status": 200,
+      "perf": {
+        "ttfb": 1,
+        "lcp": 16,
+        "cls": 0
+      },
+      "consoleErrors": [
+        "Uncaught TypeError: Cannot read properties of undefined (reading 'reminders')"
+      ],
+      "axe": [
+        {
+          "id": "button-name",
+          "impact": "critical",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:4173/login",
+      "viewport": "desktop",
+      "status": 200,
+      "perf": {
+        "ttfb": 1,
+        "lcp": 20,
+        "cls": 0
+      },
+      "consoleErrors": [],
+      "headers": {
+        "Content-Security-Policy": false,
+        "X-Content-Type-Options": false,
+        "Referrer-Policy": false,
+        "Permissions-Policy": false,
+        "X-Frame-Options or CSP frame-ancestors": false
+      },
+      "axe": [
+        {
+          "id": "button-name",
+          "impact": "critical",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:4173/login",
+      "viewport": "mobile",
+      "status": 200,
+      "perf": {
+        "ttfb": 1,
+        "lcp": 16,
+        "cls": 0
+      },
+      "consoleErrors": [],
+      "axe": [
+        {
+          "id": "button-name",
+          "impact": "critical",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:4173/pricing",
+      "viewport": "desktop",
+      "status": 200,
+      "perf": {
+        "ttfb": 1,
+        "lcp": 20,
+        "cls": 0
+      },
+      "consoleErrors": [],
+      "headers": {
+        "Content-Security-Policy": false,
+        "X-Content-Type-Options": false,
+        "Referrer-Policy": false,
+        "Permissions-Policy": false,
+        "X-Frame-Options or CSP frame-ancestors": false
+      },
+      "axe": [
+        {
+          "id": "button-name",
+          "impact": "critical",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:4173/pricing",
+      "viewport": "mobile",
+      "status": 200,
+      "perf": {
+        "ttfb": 1,
+        "lcp": 16,
+        "cls": 0
+      },
+      "consoleErrors": [],
+      "axe": [
+        {
+          "id": "button-name",
+          "impact": "critical",
+          "nodes": 1
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:4173/signup",
+      "viewport": "desktop",
+      "status": 200,
+      "perf": {
+        "ttfb": 1,
+        "lcp": 20,
+        "cls": 0
+      },
+      "consoleErrors": [],
+      "headers": {
+        "Content-Security-Policy": false,
+        "X-Content-Type-Options": false,
+        "Referrer-Policy": false,
+        "Permissions-Policy": false,
+        "X-Frame-Options or CSP frame-ancestors": false
+      },
+      "axe": [
+        {
+          "id": "button-name",
+          "impact": "critical",
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:4173/signup",
+      "viewport": "mobile",
+      "status": 200,
+      "perf": {
+        "ttfb": 1,
+        "lcp": 16,
+        "cls": 0
+      },
+      "consoleErrors": [],
+      "axe": [
+        {
+          "id": "button-name",
+          "impact": "critical",
+          "nodes": 1
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "href": "http://localhost:4173/",
+      "status": 200,
+      "linkedFrom": [
+        "http://localhost:4173/",
+        "http://localhost:4173/about",
+        "http://localhost:4173/book",
+        "http://localhost:4173/book?class=darkroom",
+        "http://localhost:4173/book?class=drawing",
+        "http://localhost:4173/book?class=wheel",
+        "http://localhost:4173/dashboard",
+        "http://localhost:4173/login",
+        "http://localhost:4173/pricing",
+        "http://localhost:4173/signup"
+      ]
+    },
+    {
+      "href": "http://localhost:4173/book",
+      "status": 200,
+      "linkedFrom": [
+        "http://localhost:4173/",
+        "http://localhost:4173/about",
+        "http://localhost:4173/book",
+        "http://localhost:4173/book?class=darkroom",
+        "http://localhost:4173/book?class=drawing",
+        "http://localhost:4173/book?class=wheel",
+        "http://localhost:4173/dashboard",
+        "http://localhost:4173/login",
+        "http://localhost:4173/pricing",
+        "http://localhost:4173/signup"
+      ]
+    },
+    {
+      "href": "http://localhost:4173/pricing",
+      "status": 200,
+      "linkedFrom": [
+        "http://localhost:4173/",
+        "http://localhost:4173/about",
+        "http://localhost:4173/book",
+        "http://localhost:4173/book?class=darkroom",
+        "http://localhost:4173/book?class=drawing",
+        "http://localhost:4173/book?class=wheel",
+        "http://localhost:4173/dashboard",
+        "http://localhost:4173/login",
+        "http://localhost:4173/pricing",
+        "http://localhost:4173/signup"
+      ]
+    },
+    {
+      "href": "http://localhost:4173/about",
+      "status": 200,
+      "linkedFrom": [
+        "http://localhost:4173/",
+        "http://localhost:4173/about",
+        "http://localhost:4173/book",
+        "http://localhost:4173/book?class=darkroom",
+        "http://localhost:4173/book?class=drawing",
+        "http://localhost:4173/book?class=wheel",
+        "http://localhost:4173/dashboard",
+        "http://localhost:4173/login",
+        "http://localhost:4173/pricing",
+        "http://localhost:4173/signup"
+      ]
+    },
+    {
+      "href": "http://localhost:4173/dashboard",
+      "status": 200,
+      "linkedFrom": [
+        "http://localhost:4173/",
+        "http://localhost:4173/about",
+        "http://localhost:4173/book",
+        "http://localhost:4173/book?class=darkroom",
+        "http://localhost:4173/book?class=drawing",
+        "http://localhost:4173/book?class=wheel",
+        "http://localhost:4173/dashboard",
+        "http://localhost:4173/login",
+        "http://localhost:4173/pricing",
+        "http://localhost:4173/signup"
+      ]
+    },
+    {
+      "href": "http://localhost:4173/book?class=wheel",
+      "status": 200,
+      "linkedFrom": [
+        "http://localhost:4173/"
+      ]
+    },
+    {
+      "href": "http://localhost:4173/book?class=drawing",
+      "status": 200,
+      "linkedFrom": [
+        "http://localhost:4173/"
+      ]
+    },
+    {
+      "href": "http://localhost:4173/book?class=darkroom",
+      "status": 200,
+      "linkedFrom": [
+        "http://localhost:4173/"
+      ]
+    },
+    {
+      "href": "http://localhost:4173/terms",
+      "status": 404,
+      "linkedFrom": [
+        "http://localhost:4173/",
+        "http://localhost:4173/about",
+        "http://localhost:4173/book",
+        "http://localhost:4173/book?class=darkroom",
+        "http://localhost:4173/book?class=drawing",
+        "http://localhost:4173/book?class=wheel",
+        "http://localhost:4173/dashboard",
+        "http://localhost:4173/login",
+        "http://localhost:4173/pricing",
+        "http://localhost:4173/signup"
+      ]
+    },
+    {
+      "href": "http://localhost:4173/signup",
+      "status": 200,
+      "linkedFrom": [
+        "http://localhost:4173/login"
+      ]
+    },
+    {
+      "href": "http://localhost:4173/login",
+      "status": 200,
+      "linkedFrom": [
+        "http://localhost:4173/signup"
+      ]
+    }
+  ],
+  "cookies": [
+    {
+      "name": "session",
+      "domain": "localhost",
+      "path": "/",
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "QA-SCAN-01",
+      "title": "Password form on /login is sent with GET, so the password goes into the URL",
+      "severity": "High",
+      "category": "Security",
+      "where": [
+        {
+          "url": "http://localhost:4173/login",
+          "vp": "desktop 1440"
+        }
+      ],
+      "actual": "The form (action /login) has no method=\"post\", so the browser sends the fields, including the password, as URL query parameters.",
+      "evidence": [
+        "evidence/scan/password-get-login-desktop.png"
+      ]
+    },
+    {
+      "id": "QA-SCAN-02",
+      "title": "Cookie \"session\" is missing HttpOnly",
+      "severity": "Medium",
+      "category": "Security",
+      "where": [
+        {
+          "url": "http://localhost:4173/",
+          "vp": "any"
+        }
+      ],
+      "actual": "\"session\" (path /): httpOnly=false, secure=false, sameSite=Lax.",
+      "evidence": []
+    },
+    {
+      "id": "QA-SCAN-03",
+      "title": "Link to /terms is broken (404)",
+      "severity": "Medium",
+      "category": "Functional",
+      "where": [
+        {
+          "url": "http://localhost:4173/",
+          "vp": "desktop 1440"
+        },
+        {
+          "url": "http://localhost:4173/about",
+          "vp": "desktop 1440"
+        },
+        {
+          "url": "http://localhost:4173/book",
+          "vp": "desktop 1440"
+        },
+        {
+          "url": "http://localhost:4173/book?class=darkroom",
+          "vp": "desktop 1440"
+        },
+        {
+          "url": "http://localhost:4173/book?class=drawing",
+          "vp": "desktop 1440"
+        },
+        {
+          "url": "http://localhost:4173/book?class=wheel",
+          "vp": "desktop 1440"
+        },
+        {
+          "url": "http://localhost:4173/dashboard",
+          "vp": "desktop 1440"
+        },
+        {
+          "url": "http://localhost:4173/login",
+          "vp": "desktop 1440"
+        },
+        {
+          "url": "http://localhost:4173/pricing",
+          "vp": "desktop 1440"
+        },
+        {
+          "url": "http://localhost:4173/signup",
+          "vp": "desktop 1440"
+        }
+      ],
+      "actual": "GET http://localhost:4173/terms returned 404. Linked from 10 page(s): /, /about, /book, /book, /book, /book, /dashboard, /login, /pricing, /signup.",
+      "evidence": [
+        "evidence/scan/link-terms.png"
+      ]
+    },
+    {
+      "id": "QA-SCAN-04",
+      "title": "Console error on /dashboard: Uncaught TypeError: Cannot read properties of undefined (reading 'remi",
+      "severity": "Medium",
+      "category": "Functional",
+      "where": [
+        {
+          "url": "http://localhost:4173/dashboard",
+          "vp": "desktop 1440"
+        },
+        {
+          "url": "http://localhost:4173/dashboard",
+          "vp": "mobile 390"
+        }
+      ],
+      "actual": "Uncaught TypeError: Cannot read properties of undefined (reading 'reminders')",
+      "evidence": [
+        "evidence/scan/console-dashboard-desktop.png"
+      ]
+    },
+    {
+      "id": "QA-SCAN-05",
+      "title": "Buttons must have discernible text (axe: button-name, critical)",
+      "severity": "Medium",
+      "category": "Accessibility",
+      "where": [
+        {
+          "url": "http://localhost:4173/",
+          "vp": "desktop 1440",
+          "targets": [
+            "#search-btn"
+          ],
+          "html": "<button class=\"icon-btn\" type=\"button\" id=\"search-btn\">",
+          "summary": "Element does not have inner text that is visible to screen readers"
+        },
+        {
+          "url": "http://localhost:4173/",
+          "vp": "mobile 390",
+          "targets": [
+            "#search-btn"
+          ],
+          "html": "<button class=\"icon-btn\" type=\"button\" id=\"search-btn\">",
+          "summary": "Element does not have inner text that is visible to screen readers"
+        },
+        {
+          "url": "http://localhost:4173/about",
+          "vp": "desktop 1440",
+          "targets": [
+            "#search-btn"
+          ],
+          "html": "<button class=\"icon-btn\" type=\"button\" id=\"search-btn\">",
+          "summary": "Element does not have inner text that is visible to screen readers"
+        },
+        {
+          "url": "http://localhost:4173/about",
+          "vp": "mobile 390",
+          "targets": [
+            "#search-btn"
+          ],
+          "html": "<button class=\"icon-btn\" type=\"button\" id=\"search-btn\">",
+          "summary": "Element does not have inner text that is visible to screen readers"
+        },
+        {
+          "url": "http://localhost:4173/book",
+          "vp": "desktop 1440",
+          "targets": [
+            "#search-btn"
+          ],
+          "html": "<button class=\"icon-btn\" type=\"button\" id=\"search-btn\">",
+          "summary": "Element does not have inner text that is visible to screen readers"
+        },
+        {
+          "url": "http://localhost:4173/book",
+          "vp": "mobile 390",
+          "targets": [
+            "#search-btn"
+          ],
+          "html": "<button class=\"icon-btn\" type=\"button\" id=\"search-btn\">",
+          "summary": "Element does not have inner text that is visible to screen readers"
+        },
+        {
+          "url": "http://localhost:4173/book?class=darkroom",
+          "vp": "desktop 1440",
+          "targets": [
+            "#search-btn"
+          ],
+          "html": "<button class=\"icon-btn\" type=\"button\" id=\"search-btn\">",
+          "summary": "Element does not have inner text that is visible to screen readers"
+        },
+        {
+          "url": "http://localhost:4173/book?class=darkroom",
+          "vp": "mobile 390",
+          "targets": [
+            "#search-btn"
+          ],
+          "html": "<button class=\"icon-btn\" type=\"button\" id=\"search-btn\">",
+          "summary": "Element does not have inner text that is visible to screen readers"
+        },
+        {
+          "url": "http://localhost:4173/book?class=drawing",
+          "vp": "desktop 1440",
+          "targets": [
+            "#search-btn"
+          ],
+          "html": "<button class=\"icon-btn\" type=\"button\" id=\"search-btn\">",
+          "summary": "Element does not have inner text that is visible to screen readers"
+        },
+        {
+          "url": "http://localhost:4173/book?class=drawing",
+          "vp": "mobile 390",
+          "targets": [
+            "#search-btn"
+          ],
+          "html": "<button class=\"icon-btn\" type=\"button\" id=\"search-btn\">",
+          "summary": "Element does not have inner text that is visible to screen readers"
+        },
+        {
+          "url": "http://localhost:4173/book?class=wheel",
+          "vp": "desktop 1440",
+          "targets": [
+            "#search-btn"
+          ],
+          "html": "<button class=\"icon-btn\" type=\"button\" id=\"search-btn\">",
+          "summary": "Element does not have inner text that is visible to screen readers"
+        },
+        {
+          "url": "http://localhost:4173/book?class=wheel",
+          "vp": "mobile 390",
+          "targets": [
+            "#search-btn"
+          ],
+          "html": "<button class=\"icon-btn\" type=\"button\" id=\"search-btn\">",
+          "summary": "Element does not have inner text that is visible to screen readers"
+        },
+        {
+          "url": "http://localhost:4173/dashboard",
+          "vp": "desktop 1440",
+          "targets": [
+            "#search-btn"
+          ],
+          "html": "<button class=\"icon-btn\" type=\"button\" id=\"search-btn\">",
+          "summary": "Element does not have inner text that is visible to screen readers"
+        },
+        {
+          "url": "http://localhost:4173/dashboard",
+          "vp": "mobile 390",
+          "targets": [
+            "#search-btn"
+          ],
+          "html": "<button class=\"icon-btn\" type=\"button\" id=\"search-btn\">",
+          "summary": "Element does not have inner text that is visible to screen readers"
+        },
+        {
+          "url": "http://localhost:4173/login",
+          "vp": "desktop 1440",
+          "targets": [
+            "#search-btn"
+          ],
+          "html": "<button class=\"icon-btn\" type=\"button\" id=\"search-btn\">",
+          "summary": "Element does not have inner text that is visible to screen readers"
+        },
+        {
+          "url": "http://localhost:4173/login",
+          "vp": "mobile 390",
+          "targets": [
+            "#search-btn"
+          ],
+          "html": "<button class=\"icon-btn\" type=\"button\" id=\"search-btn\">",
+          "summary": "Element does not have inner text that is visible to screen readers"
+        },
+        {
+          "url": "http://localhost:4173/pricing",
+          "vp": "desktop 1440",
+          "targets": [
+            "#search-btn"
+          ],
+          "html": "<button class=\"icon-btn\" type=\"button\" id=\"search-btn\">",
+          "summary": "Element does not have inner text that is visible to screen readers"
+        },
+        {
+          "url": "http://localhost:4173/pricing",
+          "vp": "mobile 390",
+          "targets": [
+            "#search-btn"
+          ],
+          "html": "<button class=\"icon-btn\" type=\"button\" id=\"search-btn\">",
+          "summary": "Element does not have inner text that is visible to screen readers"
+        },
+        {
+          "url": "http://localhost:4173/signup",
+          "vp": "desktop 1440",
+          "targets": [
+            "#search-btn"
+          ],
+          "html": "<button class=\"icon-btn\" type=\"button\" id=\"search-btn\">",
+          "summary": "Element does not have inner text that is visible to screen readers"
+        },
+        {
+          "url": "http://localhost:4173/signup",
+          "vp": "mobile 390",
+          "targets": [
+            "#search-btn"
+          ],
+          "html": "<button class=\"icon-btn\" type=\"button\" id=\"search-btn\">",
+          "summary": "Element does not have inner text that is visible to screen readers"
+        }
+      ],
+      "actual": "20 element(s) on 7 page(s) (/, /about, /book, /dashboard, /login, /pricing, /signup). First: <button class=\"icon-btn\" type=\"button\" id=\"search-btn\"> — Element does not have inner text that is visible to screen readers",
+      "evidence": [
+        "evidence/scan/a11y-button-name-root-desktop.png"
+      ]
+    },
+    {
+      "id": "QA-SCAN-06",
+      "title": "Images must have alternative text (axe: image-alt, critical)",
+      "severity": "Medium",
+      "category": "Accessibility",
+      "where": [
+        {
+          "url": "http://localhost:4173/",
+          "vp": "desktop 1440",
+          "targets": [
+            ".hero-img"
+          ],
+          "html": "<img class=\"hero-img\" src=\"/static/studio.svg\" width=\"460\" height=\"340\">",
+          "summary": "Element does not have an alt attribute"
+        },
+        {
+          "url": "http://localhost:4173/",
+          "vp": "mobile 390",
+          "targets": [
+            ".hero-img"
+          ],
+          "html": "<img class=\"hero-img\" src=\"/static/studio.svg\" width=\"460\" height=\"340\">",
+          "summary": "Element does not have an alt attribute"
+        }
+      ],
+      "actual": "2 element(s) on 1 page(s) (/). First: <img class=\"hero-img\" src=\"/static/studio.svg\" width=\"460\" height=\"340\"> — Element does not have an alt attribute",
+      "evidence": [
+        "evidence/scan/a11y-image-alt-root-desktop.png"
+      ]
+    },
+    {
+      "id": "QA-SCAN-07",
+      "title": "Elements must meet minimum color contrast ratio thresholds (axe: color-contrast, serious)",
+      "severity": "Medium",
+      "category": "Accessibility",
+      "where": [
+        {
+          "url": "http://localhost:4173/pricing",
+          "vp": "desktop 1440",
+          "targets": [
+            ".fine-print"
+          ],
+          "html": "<p class=\"fine-print\">Passes are valid for 6 months from the date of purchase and cannot be refunded once a class has been booked. Cancellations made less than 24 hours before a class are charged in f",
+          "summary": "Element has insufficient color contrast of 1.75 (foreground color: #b9bcc4, background color: #f7f6f3, font size: 10.2pt (13.6px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "url": "http://localhost:4173/pricing",
+          "vp": "mobile 390",
+          "targets": [
+            ".fine-print"
+          ],
+          "html": "<p class=\"fine-print\">Passes are valid for 6 months from the date of purchase and cannot be refunded once a class has been booked. Cancellations made less than 24 hours before a class are charged in f",
+          "summary": "Element has insufficient color contrast of 1.75 (foreground color: #b9bcc4, background color: #f7f6f3, font size: 10.2pt (13.6px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ],
+      "actual": "2 element(s) on 1 page(s) (/pricing). First: <p class=\"fine-print\">Passes are valid for 6 months from the date of purchase and cannot be refunded once a class has been booked. Cancellations made less than 24 hours before a class are charged in f — Element has insufficient color contrast of 1.75 (foreground color: #b9bcc4, background color: #f7f6f3, font size: 10.2pt (13.6px), font weight: normal). Expected contrast ratio of 4.5:1",
+      "evidence": [
+        "evidence/scan/a11y-color-contrast-pricing-desktop.png"
+      ]
+    },
+    {
+      "id": "QA-SCAN-08",
+      "title": "/pricing scrolls sideways on a 390px phone",
+      "severity": "Low",
+      "category": "UX",
+      "where": [
+        {
+          "url": "http://localhost:4173/pricing",
+          "vp": "mobile 390"
+        }
+      ],
+      "actual": "The document is 864px wide in a 390px viewport. Widest element sticking out: <table class=\"price-table\"> (844px).",
+      "evidence": [
+        "evidence/scan/overflow-pricing-mobile.png"
+      ]
+    },
+    {
+      "id": "QA-SCAN-09",
+      "title": "Security header missing: Content-Security-Policy",
+      "severity": "Low",
+      "category": "Security",
+      "where": [
+        {
+          "url": "http://localhost:4173/",
+          "vp": "any"
+        },
+        {
+          "url": "http://localhost:4173/about",
+          "vp": "any"
+        },
+        {
+          "url": "http://localhost:4173/book",
+          "vp": "any"
+        },
+        {
+          "url": "http://localhost:4173/book?class=darkroom",
+          "vp": "any"
+        },
+        {
+          "url": "http://localhost:4173/book?class=drawing",
+          "vp": "any"
+        },
+        {
+          "url": "http://localhost:4173/book?class=wheel",
+          "vp": "any"
+        },
+        {
+          "url": "http://localhost:4173/dashboard",
+          "vp": "any"
+        },
+        {
+          "url": "http://localhost:4173/login",
+          "vp": "any"
+        },
+        {
+          "url": "http://localhost:4173/pricing",
+          "vp": "any"
+        },
+        {
+          "url": "http://localhost:4173/signup",
+          "vp": "any"
+        }
+      ],
+      "actual": "Not set on 10 of 10 page(s): /, /about, /book, /book, /book, /book, /dashboard, /login, /pricing, /signup.",
+      "evidence": []
+    },
+    {
+      "id": "QA-SCAN-10",
+      "title": "Security header missing: X-Content-Type-Options",
+      "severity": "Low",
+      "category": "Security",
+      "where": [
+        {
+          "url": "http://localhost:4173/",
+          "vp": "any"
+        },
+        {
+          "url": "http://localhost:4173/about",
+          "vp": "any"
+        },
+        {
+          "url": "http://localhost:4173/book",
+          "vp": "any"
+        },
+        {
+          "url": "http://localhost:4173/book?class=darkroom",
+          "vp": "any"
+        },
+        {
+          "url": "http://localhost:4173/book?class=drawing",
+          "vp": "any"
+        },
+        {
+          "url": "http://localhost:4173/book?class=wheel",
+          "vp": "any"
+        },
+        {
+          "url": "http://localhost:4173/dashboard",
+          "vp": "any"
+        },
+        {
+          "url": "http://localhost:4173/login",
+          "vp": "any"
+        },
+        {
+          "url": "http://localhost:4173/pricing",
+          "vp": "any"
+        },
+        {
+          "url": "http://localhost:4173/signup",
+          "vp": "any"
+        }
+      ],
+      "actual": "Not set on 10 of 10 page(s): /, /about, /book, /book, /book, /book, /dashboard, /login, /pricing, /signup.",
+      "evidence": []
+    },
+    {
+      "id": "QA-SCAN-11",
+      "title": "Security header missing: Referrer-Policy",
+      "severity": "Low",
+      "category": "Security",
+      "where": [
+        {
+          "url": "http://localhost:4173/",
+          "vp": "any"
+        },
+        {
+          "url": "http://localhost:4173/about",
+          "vp": "any"
+        },
+        {
+          "url": "http://localhost:4173/book",
+          "vp": "any"
+        },
+        {
+          "url": "http://localhost:4173/book?class=darkroom",
+          "vp": "any"
+        },
+        {
+          "url": "http://localhost:4173/book?class=drawing",
+          "vp": "any"
+        },
+        {
+          "url": "http://localhost:4173/book?class=wheel",
+          "vp": "any"
+        },
+        {
+          "url": "http://localhost:4173/dashboard",
+          "vp": "any"
+        },
+        {
+          "url": "http://localhost:4173/login",
+          "vp": "any"
+        },
+        {
+          "url": "http://localhost:4173/pricing",
+          "vp": "any"
+        },
+        {
+          "url": "http://localhost:4173/signup",
+          "vp": "any"
+        }
+      ],
+      "actual": "Not set on 10 of 10 page(s): /, /about, /book, /book, /book, /book, /dashboard, /login, /pricing, /signup.",
+      "evidence": []
+    },
+    {
+      "id": "QA-SCAN-12",
+      "title": "Security header missing: Permissions-Policy",
+      "severity": "Low",
+      "category": "Security",
+      "where": [
+        {
+          "url": "http://localhost:4173/",
+          "vp": "any"
+        },
+        {
+          "url": "http://localhost:4173/about",
+          "vp": "any"
+        },
+        {
+          "url": "http://localhost:4173/book",
+          "vp": "any"
+        },
+        {
+          "url": "http://localhost:4173/book?class=darkroom",
+          "vp": "any"
+        },
+        {
+          "url": "http://localhost:4173/book?class=drawing",
+          "vp": "any"
+        },
+        {
+          "url": "http://localhost:4173/book?class=wheel",
+          "vp": "any"
+        },
+        {
+          "url": "http://localhost:4173/dashboard",
+          "vp": "any"
+        },
+        {
+          "url": "http://localhost:4173/login",
+          "vp": "any"
+        },
+        {
+          "url": "http://localhost:4173/pricing",
+          "vp": "any"
+        },
+        {
+          "url": "http://localhost:4173/signup",
+          "vp": "any"
+        }
+      ],
+      "actual": "Not set on 10 of 10 page(s): /, /about, /book, /book, /book, /book, /dashboard, /login, /pricing, /signup.",
+      "evidence": []
+    },
+    {
+      "id": "QA-SCAN-13",
+      "title": "Security header missing: X-Frame-Options or CSP frame-ancestors",
+      "severity": "Low",
+      "category": "Security",
+      "where": [
+        {
+          "url": "http://localhost:4173/",
+          "vp": "any"
+        },
+        {
+          "url": "http://localhost:4173/about",
+          "vp": "any"
+        },
+        {
+          "url": "http://localhost:4173/book",
+          "vp": "any"
+        },
+        {
+          "url": "http://localhost:4173/book?class=darkroom",
+          "vp": "any"
+        },
+        {
+          "url": "http://localhost:4173/book?class=drawing",
+          "vp": "any"
+        },
+        {
+          "url": "http://localhost:4173/book?class=wheel",
+          "vp": "any"
+        },
+        {
+          "url": "http://localhost:4173/dashboard",
+          "vp": "any"
+        },
+        {
+          "url": "http://localhost:4173/login",
+          "vp": "any"
+        },
+        {
+          "url": "http://localhost:4173/pricing",
+          "vp": "any"
+        },
+        {
+          "url": "http://localhost:4173/signup",
+          "vp": "any"
+        }
+      ],
+      "actual": "Not set on 10 of 10 page(s): /, /about, /book, /book, /book, /book, /dashboard, /login, /pricing, /signup.",
+      "evidence": []
+    }
+  ]
+}

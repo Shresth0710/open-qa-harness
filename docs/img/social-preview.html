@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>open-qa-harness social preview</title>
+<style>
+  * { box-sizing: border-box; margin: 0; }
+  html, body { width: 1280px; height: 640px; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: #0f172a; color: #e2e8f0; padding: 72px 80px; display: grid;
+    grid-template-columns: 1fr 470px; gap: 56px; align-items: center;
+  }
+  .mark { display: flex; align-items: center; gap: 14px; margin-bottom: 30px; }
+  .mark svg { width: 52px; height: 52px; }
+  .mark span { font: 600 20px/1 ui-monospace, SFMono-Regular, Menlo, monospace; color: #94a3b8; }
+  h1 { font: 800 68px/1.02 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: -2px; color: #fff; }
+  p.sub { margin-top: 26px; font-size: 27px; line-height: 1.38; color: #cbd5e1; max-width: 640px; }
+  .tags { margin-top: 34px; display: flex; gap: 10px; }
+  .tags span { border: 1px solid #334155; color: #94a3b8; border-radius: 999px; padding: 6px 14px; font-size: 17px; }
+  .card { background: #fff; color: #0f172a; border-radius: 16px; padding: 26px 28px 24px 34px; position: relative;
+          box-shadow: 0 30px 60px rgba(0,0,0,.45); }
+  .card::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 7px; background: #c2410c; border-radius: 16px 0 0 16px; }
+  .id { font: 700 15px ui-monospace, Menlo, monospace; color: #c2410c; letter-spacing: .5px; }
+  .card h2 { font-size: 23px; line-height: 1.25; margin: 8px 0 14px; }
+  .chips { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
+  .chip { border: 1px solid #d0d5dd; border-radius: 999px; padding: 4px 11px; font-size: 14px; color: #475467; }
+  .chip b { color: #0f172a; }
+  .chip.sev b { color: #c2410c; }
+  .exp { background: #eef2fb; border-left: 4px solid #2f5fb3; border-radius: 6px; padding: 10px 12px; font-size: 15px; line-height: 1.4; color: #1e293b; }
+  .exp small { display: block; font-size: 11px; letter-spacing: 1.2px; font-weight: 700; color: #475467; margin-bottom: 4px; }
+  .shot { margin-top: 14px; border: 1px solid #e4e7ec; border-radius: 8px; background: #f7f6f2; padding: 12px 14px; font-size: 13px; }
+  .shot .row { display: flex; justify-content: space-between; color: #475467; padding: 3px 0; }
+  .shot .row span { flex: 1; } .shot .row span:last-child { flex: 0 0 60px; text-align: right; }
+  .shot .row.head { font-size: 11px; letter-spacing: 1px; font-weight: 700; text-transform: uppercase; }
+  .shot .row.dup { color: #0f172a; border-top: 1px solid #e4e7ec; }
+  .shot .dups { outline: 3px solid #e11d48; outline-offset: 4px; border-radius: 4px; margin-top: 2px; }
+</style>
+</head>
+<body>
+  <div>
+    <div class="mark">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="27" cy="27" r="19" fill="none" stroke="#38bdf8" stroke-width="6"/><path d="M41 41l15 15" stroke="#38bdf8" stroke-width="7" stroke-linecap="round"/><path d="M18 27.5l6.5 6.5L37 21" fill="none" stroke="#4ade80" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>open source QA toolkit</span>
+    </div>
+    <h1>open-qa-harness</h1>
+    <p class="sub">End-to-end QA for any web app — black-box or with the code. Playwright evidence, verified findings, PDF bug report.</p>
+    <div class="tags"><span>method</span><span>CLI</span><span>Claude Code plugin</span><span>MIT</span></div>
+  </div>
+  <div class="card">
+    <div class="id">QA-CORE-02</div>
+    <h2>Double-clicking &ldquo;Book&rdquo; creates two bookings</h2>
+    <div class="chips">
+      <span class="chip sev">Severity <b>High</b></span>
+      <span class="chip">Priority <b>P1</b></span>
+      <span class="chip">Status <b>Confirmed</b></span>
+    </div>
+    <div class="exp"><small>WHAT THE USER EXPERIENCES</small>People click Book twice while it loads. Each click books another seat: two bookings for one class.</div>
+    <div class="shot">
+      <div class="row head"><span>Ref</span><span>Class</span><span>Date</span><span>Total</span></div>
+      <div class="dups">
+      <div class="row dup"><span>AC-1041</span><span>Life drawing</span><span>2026-12-12</span><span>$18.00</span></div>
+      <div class="row dup"><span>AC-1042</span><span>Life drawing</span><span>2026-12-12</span><span>$18.00</span></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

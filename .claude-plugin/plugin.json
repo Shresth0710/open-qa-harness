@@ -1,0 +1,21 @@
+{
+  "name": "oqa",
+  "description": "End-to-end QA for any web app: scope, recon, hands-on testing with Playwright, verified findings and an HTML/PDF bug report. Black-box (URL only) or white-box (with the code).",
+  "version": "0.1.0",
+  "author": {
+    "name": "Shresth0710",
+    "url": "https://github.com/Shresth0710"
+  },
+  "homepage": "https://github.com/Shresth0710/open-qa-harness",
+  "repository": "https://github.com/Shresth0710/open-qa-harness",
+  "license": "MIT",
+  "keywords": [
+    "qa",
+    "testing",
+    "playwright",
+    "e2e",
+    "bug-report",
+    "accessibility",
+    "exploratory-testing"
+  ]
+}

@@ -1,0 +1,7 @@
+node_modules/
+auth/
+*.storage.json
+engagements/*
+!engagements/.gitkeep
+test-results/
+.DS_Store

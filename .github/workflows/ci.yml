@@ -1,0 +1,43 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        node: [20, 22]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+          cache: npm
+      - run: npm ci
+      - name: Install Chromium for Playwright
+        run: npx playwright install --with-deps chromium
+      - run: node bin/oqa.mjs doctor
+      - run: npm test
+      - name: Example engagement lints clean
+        run: node bin/oqa.mjs lint examples/demo-engagement
+      - name: Planted-bad fixture must fail lint
+        run: |
+          if node bin/oqa.mjs lint test/fixtures/planted-bad; then
+            echo "lint passed a fixture with planted faults"; exit 1
+          fi
+      - name: Demo app starts and answers
+        run: |
+          PORT=4173 node demo/server.mjs &
+          for i in $(seq 1 20); do curl -fs http://localhost:4173/ >/dev/null && break; sleep 0.5; done
+          curl -fs http://localhost:4173/ >/dev/null
+          test "$(curl -s -o /dev/null -w '%{http_code}' http://localhost:4173/terms)" = "404"
+          node bin/oqa.mjs recon http://localhost:4173 --no-shots --out "$RUNNER_TEMP/smoke"
+          test -f "$RUNNER_TEMP/smoke/recon.json"

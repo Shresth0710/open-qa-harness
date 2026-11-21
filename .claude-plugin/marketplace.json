@@ -1,0 +1,16 @@
+{
+  "name": "open-qa-harness",
+  "owner": {
+    "name": "Shresth0710"
+  },
+  "metadata": {
+    "description": "End-to-end QA harness for any web app: method, Playwright tools, agents and a PDF bug report."
+  },
+  "plugins": [
+    {
+      "name": "oqa",
+      "source": "./",
+      "description": "End-to-end QA for any web app: scope, recon, hands-on testing with Playwright, verified findings and an HTML/PDF bug report."
+    }
+  ]
+}

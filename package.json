@@ -1,0 +1,61 @@
+{
+  "name": "open-qa-harness",
+  "version": "0.1.0",
+  "description": "A method and a small toolkit for end-to-end QA of any web application: recon, automated scans, bug reports that lint, and an HTML/PDF report.",
+  "type": "module",
+  "license": "MIT",
+  "author": "open-qa-harness contributors",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shresth0710/open-qa-harness.git"
+  },
+  "homepage": "https://github.com/Shresth0710/open-qa-harness#readme",
+  "bugs": {
+    "url": "https://github.com/Shresth0710/open-qa-harness/issues"
+  },
+  "bin": {
+    "oqa": "bin/oqa.mjs"
+  },
+  "files": [
+    "bin/",
+    "lib/",
+    "demo/",
+    "method/",
+    "templates/",
+    "commands/",
+    "agents/",
+    "skills/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "try": "node demo/try.mjs",
+    "demo": "node demo/server.mjs",
+    "test": "node --test test/",
+    "oqa": "node bin/oqa.mjs",
+    "setup": "npx playwright install chromium"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "qa",
+    "quality-assurance",
+    "testing",
+    "e2e",
+    "end-to-end",
+    "black-box-testing",
+    "playwright",
+    "accessibility",
+    "axe-core",
+    "bug-report",
+    "test-report",
+    "web-testing",
+    "claude-code",
+    "claude-code-plugin"
+  ],
+  "dependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "playwright": "^1.62.1"
+  }
+}

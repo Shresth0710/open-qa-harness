@@ -1,0 +1,296 @@
+{
+  "tool": "oqa recon",
+  "target": "http://localhost:4173/",
+  "origin": "http://localhost:4173",
+  "date": "2026-11-21T13:53:54.841Z",
+  "maxPages": 40,
+  "robotsTxt": true,
+  "routes": [
+    {
+      "route": "/",
+      "url": "http://localhost:4173/",
+      "sources": [
+        "crawl",
+        "sitemap"
+      ],
+      "visited": true,
+      "status": 200,
+      "title": "Book a class · Acme Studio",
+      "loadMs": 539,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshots": [
+        "evidence/recon/01-root-desktop.png",
+        "evidence/recon/01-root-mobile.png"
+      ],
+      "note": ""
+    },
+    {
+      "route": "/about",
+      "url": "http://localhost:4173/about",
+      "sources": [
+        "sitemap",
+        "crawl"
+      ],
+      "visited": true,
+      "status": 200,
+      "title": "About us · Acme Studio",
+      "loadMs": 539,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshots": [
+        "evidence/recon/03-about-desktop.png",
+        "evidence/recon/03-about-mobile.png"
+      ],
+      "note": ""
+    },
+    {
+      "route": "/book",
+      "url": "http://localhost:4173/book",
+      "sources": [
+        "sitemap",
+        "crawl",
+        "bundle"
+      ],
+      "visited": true,
+      "status": 200,
+      "title": "Book a class · Acme Studio",
+      "loadMs": 527,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshots": [
+        "evidence/recon/04-book-desktop.png",
+        "evidence/recon/04-book-mobile.png"
+      ],
+      "note": ""
+    },
+    {
+      "route": "/book?class=darkroom",
+      "url": "http://localhost:4173/book?class=darkroom",
+      "sources": [
+        "crawl"
+      ],
+      "visited": true,
+      "status": 200,
+      "title": "Book a class · Acme Studio",
+      "loadMs": 516,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshots": [
+        "evidence/recon/10-book-class-darkroom-desktop.png",
+        "evidence/recon/10-book-class-darkroom-mobile.png"
+      ],
+      "note": ""
+    },
+    {
+      "route": "/book?class=drawing",
+      "url": "http://localhost:4173/book?class=drawing",
+      "sources": [
+        "crawl"
+      ],
+      "visited": true,
+      "status": 200,
+      "title": "Book a class · Acme Studio",
+      "loadMs": 520,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshots": [
+        "evidence/recon/09-book-class-drawing-desktop.png",
+        "evidence/recon/09-book-class-drawing-mobile.png"
+      ],
+      "note": ""
+    },
+    {
+      "route": "/book?class=wheel",
+      "url": "http://localhost:4173/book?class=wheel",
+      "sources": [
+        "crawl"
+      ],
+      "visited": true,
+      "status": 200,
+      "title": "Book a class · Acme Studio",
+      "loadMs": 526,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshots": [
+        "evidence/recon/08-book-class-wheel-desktop.png",
+        "evidence/recon/08-book-class-wheel-mobile.png"
+      ],
+      "note": ""
+    },
+    {
+      "route": "/dashboard",
+      "url": "http://localhost:4173/dashboard",
+      "sources": [
+        "robots",
+        "crawl",
+        "bundle"
+      ],
+      "visited": true,
+      "status": 200,
+      "title": "Your bookings · Acme Studio",
+      "loadMs": 536,
+      "consoleErrors": [
+        "Cannot read properties of undefined (reading 'reminders')"
+      ],
+      "failedRequests": [],
+      "screenshots": [
+        "evidence/recon/07-dashboard-desktop.png",
+        "evidence/recon/07-dashboard-mobile.png"
+      ],
+      "note": ""
+    },
+    {
+      "route": "/login",
+      "url": "http://localhost:4173/login",
+      "sources": [
+        "sitemap",
+        "crawl"
+      ],
+      "visited": true,
+      "status": 200,
+      "title": "Log in · Acme Studio",
+      "loadMs": 533,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshots": [
+        "evidence/recon/06-login-desktop.png",
+        "evidence/recon/06-login-mobile.png"
+      ],
+      "note": ""
+    },
+    {
+      "route": "/pricing",
+      "url": "http://localhost:4173/pricing",
+      "sources": [
+        "sitemap",
+        "crawl"
+      ],
+      "visited": true,
+      "status": 200,
+      "title": "Pricing · Acme Studio",
+      "loadMs": 535,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshots": [
+        "evidence/recon/02-pricing-desktop.png",
+        "evidence/recon/02-pricing-mobile.png"
+      ],
+      "note": ""
+    },
+    {
+      "route": "/signup",
+      "url": "http://localhost:4173/signup",
+      "sources": [
+        "sitemap",
+        "crawl"
+      ],
+      "visited": true,
+      "status": 200,
+      "title": "Sign up · Acme Studio",
+      "loadMs": 528,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshots": [
+        "evidence/recon/05-signup-desktop.png",
+        "evidence/recon/05-signup-mobile.png"
+      ],
+      "note": ""
+    },
+    {
+      "route": "/terms",
+      "url": "http://localhost:4173/terms",
+      "sources": [
+        "crawl"
+      ],
+      "visited": true,
+      "status": 404,
+      "title": "Page not found · Acme Studio",
+      "loadMs": 535,
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)"
+      ],
+      "failedRequests": [],
+      "screenshots": [
+        "evidence/recon/11-terms-desktop.png",
+        "evidence/recon/11-terms-mobile.png"
+      ],
+      "note": ""
+    },
+    {
+      "route": "/account/settings",
+      "url": "http://localhost:4173/account/settings",
+      "sources": [
+        "bundle"
+      ],
+      "visited": false,
+      "status": null,
+      "title": null,
+      "loadMs": null,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshots": [],
+      "note": "candidate (bundle) – unverified"
+    },
+    {
+      "route": "/api/bookings",
+      "url": "http://localhost:4173/api/bookings",
+      "sources": [
+        "bundle"
+      ],
+      "visited": false,
+      "status": null,
+      "title": null,
+      "loadMs": null,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshots": [],
+      "note": "candidate (bundle) – unverified"
+    },
+    {
+      "route": "/checkout",
+      "url": "http://localhost:4173/checkout",
+      "sources": [
+        "bundle"
+      ],
+      "visited": false,
+      "status": null,
+      "title": null,
+      "loadMs": null,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshots": [],
+      "note": "candidate (bundle) – unverified"
+    },
+    {
+      "route": "/gift-cards",
+      "url": "http://localhost:4173/gift-cards",
+      "sources": [
+        "bundle"
+      ],
+      "visited": false,
+      "status": null,
+      "title": null,
+      "loadMs": null,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshots": [],
+      "note": "candidate (bundle) – unverified"
+    },
+    {
+      "route": "/logout",
+      "url": "http://localhost:4173/logout",
+      "sources": [
+        "crawl"
+      ],
+      "visited": false,
+      "status": null,
+      "title": null,
+      "loadMs": null,
+      "consoleErrors": [],
+      "failedRequests": [],
+      "screenshots": [],
+      "note": "not followed (looks destructive)"
+    }
+  ]
+}

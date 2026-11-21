@@ -1,0 +1,2 @@
+Set-Cookie: session=<id>; Path=/
+document.cookie: session=<id>
