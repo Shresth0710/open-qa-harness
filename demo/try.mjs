@@ -1,4 +1,4 @@
-// npm run try — the whole automated half of the method on the demo app, in about a minute:
+// npm run try — the whole automated half of the method on the demo app, in a minute or two:
 // start the demo, create an engagement, sign in with the demo account, recon and scan as that
 // signed-in user, and build a report of the scan candidates.
 import { spawn } from 'node:child_process';
@@ -60,7 +60,7 @@ Done. What you have now:
   ${path.join(dir, 'report', 'report.pdf')}          a report of those candidates
 
 That is the automated half. The hands-on half (the bugs no scanner finds) is in method/04,
-and examples/demo-engagement/ shows the finished result: 15 verified findings and the full report.
+and examples/demo-engagement/ shows the finished result: 15 confirmed findings (each seen twice) and the full report.
 Compare what the scan found with demo/ANSWER-KEY.md.`);
   if (!process.env.CI && existsSync(html)) {
     const opener = process.platform === 'darwin' ? 'open' : process.platform === 'win32' ? 'explorer' : 'xdg-open';

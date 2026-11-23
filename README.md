@@ -1,7 +1,7 @@
 # open-qa-harness
 
 **End-to-end QA for any web app.** Give it a URL, or a URL and the code. It maps every page, tests
-them the way a real user would, verifies every bug, and hands you a PDF report a developer can fix from.
+them the way a real user would, reproduces every bug twice before calling it confirmed, and hands you a PDF report a developer can fix from.
 
 [![CI](https://github.com/Shresth0710/open-qa-harness/actions/workflows/ci.yml/badge.svg)](https://github.com/Shresth0710/open-qa-harness/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
@@ -15,7 +15,7 @@ them the way a real user would, verifies every bug, and hands you a PDF report a
 /oqa:qa https://your-app.example.com
 ```
 
-**See it work in about a minute**, without AI, on a bundled demo app with planted bugs:
+**See it work in under two minutes**, without AI, on a bundled demo app with planted bugs:
 
 ```bash
 git clone https://github.com/Shresth0710/open-qa-harness && cd open-qa-harness
@@ -48,8 +48,8 @@ exact steps and the screenshot that shows the bug.
 
 ## Two modes
 
-**Black-box: you only have a URL** (and maybe a login). This is the common case, and it finds most
-of what users hit. Recon builds the page list from crawling, the sitemap and the JS bundle. Testing
+**Black-box: you only have a URL** (and maybe a login). This is the common case, and it catches the
+kinds of bugs users actually run into. Recon builds the page list from crawling, the sitemap and the JS bundle. Testing
 is exploratory, guided by charters and checklists. → [`method/04`](method/04-black-box-execution.md)
 
 **White-box: you also have the code.** An agent reads the repo (read-only) for the real routes,

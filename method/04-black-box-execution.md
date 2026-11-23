@@ -3,7 +3,8 @@
 **Output:** `findings/<area>.md`, `coverage.md`, `evidence/`, `created-items.md`, `sends.md`.
 
 No code, no spec, no developer to ask, often just a URL and a login. This is the most common
-situation in real life, and black-box QA done properly finds most of what a user will hit.
+situation in real life, and black-box QA done properly finds the kinds of problems users actually run into, because it
+uses the product the way they do.
 
 ## The loop, per area
 
