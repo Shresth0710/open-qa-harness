@@ -8,6 +8,13 @@ description: End-to-end quality assurance of any web application, black-box (URL
 A complete QA method plus tools. The harness root is `${CLAUDE_PLUGIN_ROOT}` when installed as a
 plugin, otherwise the folder containing `bin/oqa.mjs`. `oqa` below = `node <harness-root>/bin/oqa.mjs`.
 
+**If you only have this skill and not the harness** (installed from a skills directory, or copied on its own):
+the method still applies, but the `method/` files and the `oqa` tool are missing. Ask the user before installing
+anything, then get them from the open-source repo:
+`git clone https://github.com/Shresth0710/open-qa-harness && cd open-qa-harness && npm install && npx playwright install chromium`.
+The harness root is then that folder. Node.js 20+ is required. Without the tool, follow the loop below by hand
+with any browser automation you have, and keep the finding format from `templates/engagement/findings/README.md` in the repo.
+
 ## The loop
 1. **Scope** (`method/01-scoping-and-rules.md`): authorisation, goal, reader, environment, accounts,
    what may be changed. Ask once, batched, with defaults. `oqa init <name> --url <url>`.

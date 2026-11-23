@@ -89,6 +89,8 @@ Doctor prints the two exact commands (`npm install --prefix <plugin folder>` and
 ### 2. Any other AI agent (Codex, Cursor, Gemini CLI, …)
 Point it at [`AGENTS.md`](AGENTS.md). The method is plain markdown and the tools are a plain CLI. The
 agent prompts in [`agents/`](agents/) work as role descriptions in any tool.
+The [`open-qa` skill](skills/open-qa/SKILL.md) also works when installed on its own from a skills directory:
+it tells the agent where to get the method and the `oqa` tool if they are missing.
 
 ### 3. No AI at all
 The method is written for people first. Use the CLI and the checklists:
